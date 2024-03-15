@@ -1,5 +1,3 @@
-<!-- Tic Tac Toe Game -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +9,11 @@
 <body>
     <div class="container">
         <h1>Tic-Tac-Toe</h1>
-        <div class="game">
+        <div class="game-mode-selection">
+            <button id="play-human">Play vs Human</button>
+            <button id="play-ai">Play vs AI</button>
+        </div>
+        <div class="game" style="display: none;">
             <div class="row">
                 <div class="cell" id="cell-0"></div>
                 <div class="cell" id="cell-1"></div>
