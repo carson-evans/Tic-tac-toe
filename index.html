@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
+    <audio id="placeSound" src="place.mp3" preload="auto"></audio>
+    <audio id="winSound" src="win.mp3" preload="auto"></audio>
 </head>
 <body>
     <div class="container">
@@ -34,6 +36,11 @@
             <h2 id="result"></h2>
             <button id="restart">Restart</button>
         </div>
+        <div class="scoreboard">
+            <div>Player X: <span id="score-x">0</span></div>
+            <div>Player O: <span id="score-o">0</span></div>
+        </div>
+        <div class="transition-screen" id="gameStartScreen">Game Start!</div>
     </div>
     <script src="script.js"></script>
 </body>
