@@ -28,6 +28,10 @@ const handleMove = (e) => {
     }
 };
 
+const clearScoresButton = document.getElementById('clear-scores');
+
+clearScoresButton.addEventListener('click', clearScores);
+
 // fill cells with X or O
 const fillCell = (cell, index) => {
     cell.textContent = boardState[index];
@@ -128,6 +132,21 @@ function aiMove() {
 
     }
 }
+
+function clearScores() {
+    // Reset scores to 0
+    scoreX = 0;
+    scoreO = 0;
+
+    // Update the scoreboard display
+    document.getElementById('score-x').textContent = scoreX;
+    document.getElementById('score-o').textContent = scoreO;
+
+    // Clear scores from local storage
+    localStorage.setItem('scoreX', scoreX);
+    localStorage.setItem('scoreO', scoreO);
+}
+
 
 // Function to load scores from local storage
 function loadScores() {
