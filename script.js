@@ -212,7 +212,7 @@ function handleSetNamesAndStartGame() {
 
     // Start the game
     resetBoard();
-    // Hide the setup UI, if that's part of your game flow
+    // Hide the setup UI
     document.getElementById('player-setup').style.display = 'none';
     document.querySelector('.game').style.display = 'block'; // Show the game board
 }
@@ -269,7 +269,7 @@ document.getElementById('play-ai').addEventListener('click', function () {
 
 document.addEventListener('DOMContentLoaded', updateScoreboard);
 
-// Add an event listener to your 'Set Names & Start Game' button
+// Add an event listener to 'Set Names & Start Game' button
 document.getElementById('startGame').addEventListener('click', handleSetNamesAndStartGame);
 
 // Load player names on page load
